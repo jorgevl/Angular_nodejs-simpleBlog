@@ -1,10 +1,10 @@
 //DEFINITIONS
 //Express 4+
 var express = require('express');
-var multer  = require('multer')
-var upload = multer({ dest: 'uploads/' })
-var bodyParser = require('body-parser')
-var methodOverride = require('method-override')
+//var multer  = require('multer');
+//var upload = multer({ dest: 'uploads/' });
+//var bodyParser = require('body-parser');
+var methodOverride = require('method-override');
 var logger  = require("eazy-logger").Logger({
     prefix: "{blue:[}{magenta:easy-logger}{blue:] }",
     useLevelPrefixes: true
@@ -68,7 +68,7 @@ app.delete('/api/delete/:entry', function(req, res) {
 		_id: req.params.entry
 	}, function(err, entry) {
 		if(err){
-			res.send(err);
+			//res.send(err);
 		}
 
 		Entry.find(function(err, entries) {
