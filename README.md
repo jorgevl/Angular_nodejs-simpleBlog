@@ -1,2 +1,3 @@
-# Angular_nodejs-simpleBlog
-A simple blog made using Angular, nodejs and mongodb
+# Angular Node.js Simple Blog - "ANSBLOG"
+
+A simple blog designed using Angular, Node.js and MongoDB
