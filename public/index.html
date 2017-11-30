@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" ng-app="angularNjsBlog">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Angular Node.js Simple Blog</title>
+		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+	</head>
+	
+	<body ng-controller="mainController">
+		<div class="container"> 
+			<!--header-->
+			<div class="jumbotron text-center">
+				<h2>Angular Node.js Simple Blog, <span class="label label-info">{{ entries.length }}</span> entries in db</h2>
+			</div>
+			
+			<!--Entry list-->
+			<div id="entry-list" class="row">
+				<div class="col-sm-4 col-sm-offset-4">
+					<div class="checkbox" ng-repeat="entry in entries">
+						<label>
+							<input type="checkbox" ng-click="deleteEntry(entry._id)"> {{ entry.text }} 
+						</label>
+					 </div>
+				 </div>
+			 </div>
+			 
+			 <!--New entry adding form--> 			
+			 <div id="entry-form" class="row">
+				<div class="col-sm-8 col-sm-offset-2 text-center">
+					<form>
+						<div class="form-group">
+							<input type="text" class="form-control input-lg text-center" placeholder="Insert a new entry" ng-model="formData.text">
+						</div>
+						<button class="btn btn-primary btn-lg" ng-click="createEntry()">Add</button>
+					</form>
+				</div>
+			</div>	
+		</div>
+		
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script> 
+		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script> 
+		<script src="main.js"></script>
+	</body>
+	
+</html>

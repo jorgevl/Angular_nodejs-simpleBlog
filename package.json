@@ -1,0 +1,24 @@
+{
+	"name": "Angular_Node.js_Simple_Blog",
+	"author": {
+		"name": "Jorge Vieira",
+		"email": "tryjorgecatch@gmail.com",
+		"url": "http://www.tryjorgecatch.com"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/jorgevl/Angular_nodejs-simpleBlog"
+	},
+	"license": "MIT",
+	"version": "0.0.1",
+	"description": "Simple Angular + nodejs blog",
+	"main": "server.js",
+	"dependencies": {
+		"express": "4.16.2",
+		"body-parser": "latest",
+		"multer": "latest",
+		"method-override": "latest",
+		"eazy-logger": "latest",
+		"mongoose": "latest"
+	}
+}
