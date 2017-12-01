@@ -3,7 +3,7 @@
 var express = require('express');
 //var multer  = require('multer');
 //var upload = multer({ dest: 'uploads/' });
-//var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
 var logger  = require("eazy-logger").Logger({
     prefix: "{blue:[}{magenta:easy-logger}{blue:] }",
